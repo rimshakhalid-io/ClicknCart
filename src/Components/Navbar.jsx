@@ -11,11 +11,8 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center">
             <img className="h-14 mr-2" src="public\images\logotype.png" alt="Logo" />
-            <h3  className="text-white text-2xl font-semibold">MobileStore</h3>
+            <h3 className="text-white text-2xl font-semibold">MobileStore</h3>
           </div>
-
-
-
           {/* Menu Items */}
           <div className="hidden md:flex md:items-center md:space-x-5">
             <Link to="/" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Home</Link>
@@ -29,19 +26,19 @@ const Navbar = () => {
                 <div className="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg bg-slate-800 ring-1 ring-black ring-opacity-5">
                   <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                     <Link to="/upcomingphone" className="block px-2 py-2 text-sm text-gray-100  hover:bg-gray-400" role="menuitem">Upcoming Phone</Link>
-                    <Link href="newlaunch" className="block px-2 py-2 text-sm text-gray-100 hover:bg-gray-400" role="menuitem">New Launch </Link>
+                    <Link to="/newlaunch" className="block px-2 py-2 text-sm text-gray-100 hover:bg-gray-400" role="menuitem">New Launch</Link>
                   </div>
                 </div>
               )}
             </div>
             <Link to="/contactus" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">ContactUs</Link>
-            <a href="#" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Terms</a>
-            
-            
+            <Link to="/terms" className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium">Terms</Link>
+
+
           </div>
           {/* Auth Buttons */}
           <div className="hidden md:flex md:items-center md:space-x-4">
-            <Link  className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" to='/signin'> Login</Link>
+            <Link className="text-gray-300 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium" to='/signin'> Login</Link>
             <Link to="/signup" className="bg-orange-700 hover:bg-red-400 text-white px-4 py-2 rounded-md text-sm font-medium">Sign Up</Link>
           </div>
           {/* Mobile Menu Toggle */}
